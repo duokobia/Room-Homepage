@@ -1,0 +1,35 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html:focus-within {
+    scroll-behavior: smooth;
+}
+html{
+    background-color: var(--clr-white);
+    background-size:cover;
+}
+body {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    -webkit-font-smoothing: antialiased;
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    text-rendering: optimizeSpeed;
+}
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+/* A elements that don't have a class get default styles */
+ a:not([class]) {
+    -webkit-text-decoration-skip: ink;
+    text-decoration-skip-ink: auto;
+} 
